@@ -5,19 +5,12 @@ import "@/styles/globals.css";
 
 const chakraPetch = Chakra_Petch({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "500", "700"],
 });
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <style jsx global>
-        {`
-          html {
-            font-family: ${chakraPetch.style.fontFamily};
-          }
-        `}
-      </style>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="text/html; charset=UTF-8" name="Content-Type" />
@@ -50,6 +43,13 @@ export default function App({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#f3ba2f" />
         <meta name="theme-color" content="#f3ba2f" />
       </Head>
+      <style jsx global>
+        {`
+          html {
+            font-family: ${chakraPetch.style.fontFamily};
+          }
+        `}
+      </style>
       <Layout>
         <Component {...pageProps} />
       </Layout>
