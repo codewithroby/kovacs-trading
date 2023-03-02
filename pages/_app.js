@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </Layout>
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_CODE}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_CODE}`}
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -52,7 +52,7 @@ export default function App({ Component, pageProps }) {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
       
-        gtag('config', '${process.env.GOOGLE_ANALYTICS_CODE}', {
+        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_CODE}', {
             page_path: window.location.pathname,
         });
 
