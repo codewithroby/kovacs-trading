@@ -46,7 +46,7 @@ export default function PositionSizeCalculatorComponent() {
         </label>
         <label className="flex calculatorInput items-center" htmlFor="risk">
           <span className="pr-2">
-            <FaDollarSign className="h-4 w-4" />
+            <FaDollarSign className="h-4 w-4 text-white" />
           </span>
           <input
             className="flex-1 bg-transparent"
@@ -64,7 +64,7 @@ export default function PositionSizeCalculatorComponent() {
         </label>
         <label className="flex calculatorInput items-center" htmlFor="entry">
           <span className="pr-2">
-            <FaDollarSign className="h-4 w-4" />
+            <FaDollarSign className="h-4 w-4 text-white" />
           </span>
           <input
             className="flex-1 bg-transparent"
@@ -82,7 +82,7 @@ export default function PositionSizeCalculatorComponent() {
         </label>
         <label className="flex calculatorInput items-center" htmlFor="exit">
           <span className="pr-2">
-            <FaDollarSign className="h-4 w-4" />
+            <FaDollarSign className="h-4 w-4 text-white" />
           </span>
           <input
             className="flex-1 bg-transparent"
@@ -99,7 +99,7 @@ export default function PositionSizeCalculatorComponent() {
         <label htmlFor="size" className="calculatorLabel">
           POSITION SIZE
         </label>
-        <div className="flex calculatorInput items-center">
+        <div className="flex calculatorPosition items-center">
           <input
             className="flex-1 text-white font-bold bg-transparent"
             type="number"
@@ -128,8 +128,8 @@ export default function PositionSizeCalculatorComponent() {
         show={copiedPositionSize}
       >
         <div className="col-span-2 text-center pt-4">
-          <span className="calculatorLabel text-center text-2xl">
-            COPIED TO CLIPBOARD!
+          <span className="calculatorLabel text-center text-lg sm:text-2xl">
+            POSITION SIZE COPIED TO CLIPBOARD
           </span>
         </div>
       </Transition>

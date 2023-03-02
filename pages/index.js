@@ -27,7 +27,7 @@ export default function Home() {
           src={logoFit}
           alt="Kovacs Trading Logo"
           width={300}
-          height={300}
+          height="auto"
           placeholder="blur"
           priority={true}
         />

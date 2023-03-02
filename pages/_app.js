@@ -1,7 +1,8 @@
 import Layout from "@/components/layout";
 import Head from "next/head";
-import { Chakra_Petch } from "next/font/google";
 import "@/styles/globals.css";
+
+import { Chakra_Petch } from "next/font/google";
 
 const chakraPetch = Chakra_Petch({
   subsets: ["latin"],
@@ -43,13 +44,11 @@ export default function App({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#f3ba2f" />
         <meta name="theme-color" content="#f3ba2f" />
       </Head>
-      <style jsx global>
-        {`
-          html {
-            font-family: ${chakraPetch.style.fontFamily};
-          }
-        `}
-      </style>
+      <style jsx global>{`
+        html {
+          font-family: ${chakraPetch.style.fontFamily};
+        }
+      `}</style>
       <Layout>
         <Component {...pageProps} />
       </Layout>
