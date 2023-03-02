@@ -20,7 +20,8 @@ export default function PositionSizeCalculatorComponent() {
       size:
         newPositionObj.risk > 0 &&
         newPositionObj.entry > 0 &&
-        newPositionObj.exit > 0
+        newPositionObj.exit > 0 &&
+        newPositionObj.entry !== newPositionObj.exit
           ? Number(
               Math.abs(
                 newPositionObj.risk /
