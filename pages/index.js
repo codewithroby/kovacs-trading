@@ -31,7 +31,7 @@ export default function Home() {
           placeholder="blur"
           priority={true}
         />
-        <p className="text-center my-10 text-xl sm:text-2xl text-gray-800">
+        <p className="text-center mt-10 text-xl sm:text-2xl text-gray-800">
           Learn how to trade for free with our comprehensive tutorials and
           access useful tools that enhance your trading experience. <br />
           Our platform provides everything you need to become a successful

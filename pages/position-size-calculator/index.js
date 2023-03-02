@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="twitter:description" content={metaData.description} />
         <meta name="twitter:image" content={metaData.thumbnail} />
       </Head>
-      <div className="max-w-5xl px-8 sm:p-4 flex flex-col lg:flex-row justify-center items-center sm:space-x-4">
+      <div className="max-w-5xl px-2 sm:px-0 flex flex-col lg:flex-row justify-center items-center sm:space-x-4">
         <div className="flex flex-col text-center lg:text-left">
           <h1 className="heading big">POSITION SIZE CALCULATOR</h1>
           <p className="mt-5 mb-7 text-lg sm:text-xl text-gray-800">

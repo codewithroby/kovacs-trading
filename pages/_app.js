@@ -1,10 +1,23 @@
 import Layout from "@/components/layout";
 import Head from "next/head";
+import { Chakra_Petch } from "next/font/google";
 import "@/styles/globals.css";
+
+const chakraPetch = Chakra_Petch({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <style jsx global>
+        {`
+          html {
+            font-family: ${chakraPetch.style.fontFamily};
+          }
+        `}
+      </style>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="text/html; charset=UTF-8" name="Content-Type" />
