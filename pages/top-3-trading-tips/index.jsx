@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import TitleAndDescriptionComponent from "@/components/article/titleAndDescription";
-import CardForGridComponent from "@/components/article/cardForGrid";
+import TitleAndDescriptionComponent from "@/components/page/titleAndDescription";
+import CardForGridComponent from "@/components/page/cardForGrid";
 
 const metaData = {
   title: "Top 3 Trading Tips - Kovacs Trading",
@@ -45,7 +45,7 @@ export default function Top3TradingTipsPage() {
                 <b>
                   <Link
                     href="/position-size-calculator"
-                    className="text-kt-yellow underline underline-offset-2 hover:text-kt-black"
+                    className="text-yellow-700 underline underline-offset-2 hover:text-kt-yellow"
                   >
                     Position Size Calculator
                   </Link>
@@ -84,14 +84,14 @@ export default function Top3TradingTipsPage() {
                 <b>
                   <a
                     href="https://t.me/EmperorbtcTA"
-                    className="text-kt-yellow underline underline-offset-2 hover:text-kt-black"
+                    className="text-yellow-700 underline underline-offset-2 hover:text-kt-yellow"
                     target="_blank"
                   >
                     EmperorBTC's Technical Analysis
                   </a>
                 </b>{" "}
-                telegram channel. I started learning to trade here a couple of
-                years ago. Emperor offers a range of complete guides for both
+                telegram channel. I started learning how to trade here a couple
+                of years ago. Emperor offers a range of complete guides for both
                 beginner and advanced traders.
               </p>
             </div>
@@ -109,7 +109,7 @@ export default function Top3TradingTipsPage() {
                 <b>
                   <a
                     href={process.env.NEXT_PUBLIC_BYBIT_REFERRAL_LINK}
-                    className="text-kt-yellow underline underline-offset-2 hover:text-kt-black"
+                    className="text-yellow-700 underline underline-offset-2 hover:text-kt-yellow"
                     target="_blank"
                   >
                     ByBit
@@ -123,7 +123,7 @@ export default function Top3TradingTipsPage() {
                 <b>
                   <a
                     href={process.env.NEXT_PUBLIC_BINANCE_REFERRAL_LINK}
-                    className="text-kt-yellow underline underline-offset-2 hover:text-kt-black"
+                    className="text-yellow-700 underline underline-offset-2 hover:text-kt-yellow"
                     target="_blank"
                   >
                     Binance
@@ -137,7 +137,7 @@ export default function Top3TradingTipsPage() {
                 <b>
                   <a
                     href="https://coinmarketcap.com/rankings/exchanges/"
-                    className="text-kt-yellow underline underline-offset-2 hover:text-kt-black"
+                    className="text-yellow-700 underline underline-offset-2 hover:text-kt-yellow"
                     target="_blank"
                   >
                     a list of the top crypto exchanges

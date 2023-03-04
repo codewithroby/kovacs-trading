@@ -1,4 +1,4 @@
-import TitleAndDescriptionComponent from "@/components/article/titleAndDescription";
+import TitleAndDescriptionComponent from "@/components/page/titleAndDescription";
 import Head from "next/head";
 import PositionSizeCalculatorComponent from "./positionSizeCalculator";
 
