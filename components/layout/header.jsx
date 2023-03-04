@@ -63,7 +63,6 @@ export default function Header() {
               width={54}
               height={30}
               alt="Kovacs Trading"
-              placeholder="blur"
             />
           </Link>
         </div>
@@ -247,7 +246,7 @@ export default function Header() {
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="https://instagram.com/robert.cfx"
+            href="https://twitter.com/robert_cfx"
             target="_blank"
             className="text-sm font-semibold leading-6 text-gray-300 hover:text-gray-50"
           >
@@ -270,7 +269,6 @@ export default function Header() {
                 width={54}
                 height={30}
                 alt="Kovacs Trading"
-                placeholder="blur"
               />
             </Link>
             <button
@@ -289,8 +287,8 @@ export default function Header() {
                   <Link
                     href="/"
                     className={
-                      `flex w-full rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50 ` +
-                      (pathname === "/" ? "bg-gray-50" : "")
+                      `flex w-full rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ` +
+                      (pathname === "/" ? "bg-gray-50" : "hover:bg-gray-50")
                     }
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -300,7 +298,14 @@ export default function Header() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                      <Disclosure.Button
+                        className={
+                          `flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ` +
+                          (pathname === "/top-3-trading-tips"
+                            ? "bg-gray-50"
+                            : "hover:bg-gray-50")
+                        }
+                      >
                         HOW TO TRADE
                         <ChevronDownIcon
                           className={classNames(
@@ -317,7 +322,12 @@ export default function Header() {
                             key={item.name}
                             href={item.href}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className={
+                              `block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 ` +
+                              (pathname === item.href
+                                ? "bg-gray-50"
+                                : "hover:bg-gray-50")
+                            }
                           >
                             {item.name}
                           </Link>
@@ -329,7 +339,14 @@ export default function Header() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                      <Disclosure.Button
+                        className={
+                          `flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ` +
+                          (pathname === "/position-size-calculator"
+                            ? "bg-gray-50"
+                            : "hover:bg-gray-50")
+                        }
+                      >
                         TRADING TOOLS
                         <ChevronDownIcon
                           className={classNames(
@@ -346,7 +363,12 @@ export default function Header() {
                             key={item.name}
                             href={item.href}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className={
+                              `block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 ` +
+                              (pathname === item.href
+                                ? "bg-gray-50"
+                                : "hover:bg-gray-50")
+                            }
                           >
                             {item.name}
                           </Link>
@@ -364,7 +386,7 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <a
-                  href="https://instagram.com/robert.cfx"
+                  href="https://twitter.com/robert_cfx"
                   target="_blank"
                   className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >

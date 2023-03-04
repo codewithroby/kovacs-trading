@@ -28,7 +28,6 @@ export default function HomePage() {
           alt="Kovacs Trading Logo"
           width={300}
           height="auto"
-          placeholder="blur"
           priority={true}
         />
         <p className="text-center mt-10 text-xl sm:text-2xl text-gray-800">

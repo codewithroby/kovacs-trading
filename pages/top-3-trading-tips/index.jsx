@@ -6,7 +6,7 @@ import CardForGridComponent from "@/components/article/cardForGrid";
 const metaData = {
   title: "Top 3 Trading Tips - Kovacs Trading",
   description:
-    "Boost your trading profits with our top 3 trading tips for beginners. Our expert tips cover essential strategies such as risk management and technical analysis to help you succeed in the market. Visit our webpage now and start implementing these tips to become a more profitable trader today!",
+    "Boost your trading results with our top 3 trading tips for beginners. Our expert tips cover essential strategies such as risk management and technical analysis to help you succeed in the market.",
   thumbnail:
     "https://kovacstrading.com/images/thumbnails/top-3-trading-tips.jpg",
 };
@@ -36,7 +36,8 @@ export default function Top3TradingTipsPage() {
               <p className="text-lg py-2">
                 Always set an appropriate position size for your trades to
                 minimize losses and maximize gains. You should never risk more
-                than 5% of your portfolio on each trade.
+                than 3-5% of your portfolio on each trade. As a complete
+                beginner you should aim for maximum 5-10$ per trade.
               </p>
               <p className="text-lg py-2">
                 If you want to calculate the correct position size for your
@@ -63,7 +64,7 @@ export default function Top3TradingTipsPage() {
               </p>
             </div>
           </CardForGridComponent>
-          <CardForGridComponent title="Learn Fundamentals">
+          <CardForGridComponent title="Master Fundamentals">
             <div className="py-3 px-6">
               <p className="text-lg py-2">
                 A common mistake that beginner traders make is trying out too
@@ -72,16 +73,26 @@ export default function Top3TradingTipsPage() {
                 be overwhelming and ultimately useless.
               </p>
               <p className="text-lg py-2">
-                Many experienced traders rely solely on candlesticks and volume
-                in their trades and are more profitable than those who use 100
-                indicators. This approach allows them to focus on what's
-                important and avoid getting distracted by what's not.
-              </p>
-              <p className="text-lg py-2">
                 Using indicators and different strategies is not bad, but you
                 must not skip the fundamentals. Start by getting comfortable
-                with support, resistance, volume, and RSI, and only then start
-                using advanced techniques in your trading.
+                with support, resistance, and volume. Only then start using more
+                advanced trading techniques.
+              </p>
+              <p className="text-lg py-2">
+                A great place where you can find complete, beginner-friendly
+                guides is{" "}
+                <b>
+                  <a
+                    href="https://t.me/EmperorbtcTA"
+                    className="text-kt-yellow underline underline-offset-2 hover:text-kt-black"
+                    target="_blank"
+                  >
+                    EmperorBTC's Technical Analysis
+                  </a>
+                </b>{" "}
+                telegram channel. I started learning to trade here a couple of
+                years ago. Emperor offers a range of complete guides for both
+                beginner and advanced traders.
               </p>
             </div>
           </CardForGridComponent>
@@ -123,13 +134,15 @@ export default function Top3TradingTipsPage() {
               <p className="text-lg py-2">
                 Don't worry if you don't feel like using the exchanges above,
                 here is{" "}
-                <a
-                  href="https://coinmarketcap.com/rankings/exchanges/"
-                  className="text-kt-yellow underline underline-offset-2 hover:text-kt-black"
-                  target="_blank"
-                >
-                  a list of the top crypto exchanges
-                </a>{" "}
+                <b>
+                  <a
+                    href="https://coinmarketcap.com/rankings/exchanges/"
+                    className="text-kt-yellow underline underline-offset-2 hover:text-kt-black"
+                    target="_blank"
+                  >
+                    a list of the top crypto exchanges
+                  </a>
+                </b>{" "}
                 for your convenience!
               </p>
             </div>
