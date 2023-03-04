@@ -9,7 +9,7 @@ const metaData = {
   thumbnail: "https://kovacstrading.com/images/brand/thumbnail.jpg",
 };
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Head>

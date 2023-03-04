@@ -9,10 +9,21 @@ import {
   EnvelopeIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
+import { IoSchoolSharp } from "react-icons/io5";
 import Image from "next/image";
 import iconImage from "../../public/images/brand/icon-only-light.png";
 
-const utilities = [
+const howToTrade = [
+  {
+    name: "TOP 3 TRADING TIPS",
+    description:
+      "Learn these three fundamental tips to instantly become a more profitable Trader.",
+    href: "/top-3-trading-tips",
+    icon: IoSchoolSharp,
+  },
+];
+
+const tools = [
   {
     name: "POSITION SIZE CALCULATOR",
     description:
@@ -36,7 +47,8 @@ export default function Header() {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const utilitiesRef = useRef();
+  const howToTradeRef = useRef();
+  const toolsRef = useRef();
 
   return (
     <header className="bg-kt-black">
@@ -77,15 +89,15 @@ export default function Header() {
           </Link>
           <Popover className="relative">
             <Popover.Button
-              ref={utilitiesRef}
+              ref={howToTradeRef}
               className={
                 `flex items-center gap-x-1 text-sm font-semibold leading-6 hover:text-gray-50 focus:outline-none ` +
-                (pathname === "/position-size-calculator"
+                (pathname === "/top-3-trading-tips"
                   ? "text-gray-50"
                   : "text-gray-300")
               }
             >
-              UTILITIES
+              HOW TO TRADE
               <ChevronDownIcon
                 className="h-5 w-5 flex-none"
                 aria-hidden="true"
@@ -95,23 +107,25 @@ export default function Header() {
             <Transition
               as={Fragment}
               enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
               leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-md ring-1 ring-kt-black/5">
                 <div className="p-4">
-                  {utilities.map((item) => (
+                  {howToTrade.map((item) => (
                     <Link
                       href={item.href}
                       key={item.name}
                       className={
                         `group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6  ` +
-                        (pathname === "/" ? "hover:bg-gray-50" : "bg-gray-50")
+                        (pathname !== item.href
+                          ? "hover:bg-gray-50"
+                          : "bg-gray-50")
                       }
-                      onClick={() => utilitiesRef.current?.click()}
+                      onClick={() => howToTradeRef.current?.click()}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-kt-yellow">
                         <item.icon
@@ -129,13 +143,13 @@ export default function Header() {
                     </Link>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                {/*<div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
                       className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                      onClick={() => utilitiesRef.current?.click()}
+                      onClick={() => toolsRef.current?.click()}
                     >
                       <item.icon
                         className="h-5 w-5 flex-none text-gray-400"
@@ -144,7 +158,82 @@ export default function Header() {
                       {item.name}
                     </a>
                   ))}
+                  </div>*/}
+              </Popover.Panel>
+            </Transition>
+          </Popover>
+          <Popover className="relative">
+            <Popover.Button
+              ref={toolsRef}
+              className={
+                `flex items-center gap-x-1 text-sm font-semibold leading-6 hover:text-gray-50 focus:outline-none ` +
+                (pathname === "/position-size-calculator"
+                  ? "text-gray-50"
+                  : "text-gray-300")
+              }
+            >
+              TRADING TOOLS
+              <ChevronDownIcon
+                className="h-5 w-5 flex-none"
+                aria-hidden="true"
+              />
+            </Popover.Button>
+
+            <Transition
+              as={Fragment}
+              enter="transition ease-out duration-200"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition ease-in duration-150"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-md ring-1 ring-kt-black/5">
+                <div className="p-4">
+                  {tools.map((item) => (
+                    <Link
+                      href={item.href}
+                      key={item.name}
+                      className={
+                        `group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6  ` +
+                        (pathname !== item.href
+                          ? "hover:bg-gray-50"
+                          : "bg-gray-50")
+                      }
+                      onClick={() => toolsRef.current?.click()}
+                    >
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-kt-yellow">
+                        <item.icon
+                          className="h-6 w-6 text-white"
+                          aria-hidden="true"
+                        />
+                      </div>
+                      <div className="flex-auto">
+                        <div className="block font-semibold text-gray-900">
+                          <span className="text-kt-black">{item.name}</span>
+                          <span className="absolute inset-0" />
+                        </div>
+                        <p className="mt-1 text-gray-500">{item.description}</p>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
+                {/*<div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                  {callsToAction.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                      onClick={() => toolsRef.current?.click()}
+                    >
+                      <item.icon
+                        className="h-5 w-5 flex-none text-gray-400"
+                        aria-hidden="true"
+                      />
+                      {item.name}
+                    </a>
+                  ))}
+                </div>*/}
               </Popover.Panel>
             </Transition>
           </Popover>
@@ -212,7 +301,7 @@ export default function Header() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
-                        UTILITIES
+                        HOW TO TRADE
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
@@ -223,7 +312,36 @@ export default function Header() {
                       </Disclosure.Button>
 
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...utilities /*, ...callsToAction*/].map((item) => (
+                        {[...howToTrade /*, ...callsToAction*/].map((item) => (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+                <Disclosure as="div" className="-mx-3">
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                        TRADING TOOLS
+                        <ChevronDownIcon
+                          className={classNames(
+                            open ? "rotate-180" : "",
+                            "h-5 w-5 flex-none"
+                          )}
+                          aria-hidden="true"
+                        />
+                      </Disclosure.Button>
+
+                      <Disclosure.Panel className="mt-2 space-y-2">
+                        {[...tools /*, ...callsToAction*/].map((item) => (
                           <Link
                             key={item.name}
                             href={item.href}

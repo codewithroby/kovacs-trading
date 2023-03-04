@@ -1,3 +1,4 @@
+import TitleAndDescriptionComponent from "@/components/article/titleAndDescription";
 import Head from "next/head";
 import PositionSizeCalculatorComponent from "./positionSizeCalculator";
 
@@ -5,10 +6,11 @@ const metaData = {
   title: "Position Size Calculator - Kovacs Trading",
   description:
     "Calculate your trade's position size quickly and easily with our free online calculator. Our user-friendly tool simplifies the process of determining your trade's lot size, making trading more efficient and less stressful. Try it now!",
-  thumbnail: "https://kovacstrading.com/images/brand/thumbnail.jpg",
+  thumbnail:
+    "https://kovacstrading.com/images/thumbnails/position-size-calculator.jpg",
 };
 
-export default function Home() {
+export default function PositionSizeCalculatorPage() {
   return (
     <>
       <Head>
@@ -21,14 +23,12 @@ export default function Home() {
         <meta name="twitter:description" content={metaData.description} />
         <meta name="twitter:image" content={metaData.thumbnail} />
       </Head>
-      <div className="max-w-5xl px-2 sm:px-0 flex flex-col lg:flex-row justify-center items-center sm:space-x-4">
-        <div className="flex flex-col text-center lg:text-left">
-          <h1 className="heading big">POSITION SIZE CALCULATOR</h1>
-          <p className="mt-5 mb-7 text-lg sm:text-xl text-gray-800">
-            Calculate your trade's position size quickly and easily with our
-            free online calculator.
-          </p>
-        </div>
+      <div className="max-w-5xl flex flex-col justify-center items-center">
+        <TitleAndDescriptionComponent
+          title="Position Size Calculator"
+          description="Calculate your trade's position size quickly and easily with our free
+          online calculator."
+        />
         <PositionSizeCalculatorComponent />
       </div>
     </>

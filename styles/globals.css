@@ -20,6 +20,9 @@
   .heading {
     @apply text-kt-yellow;
   }
+  .headingDark {
+    @apply text-kt-black;
+  }
   .big {
     @apply text-3xl sm:text-4xl lg:text-5xl font-semibold;
   }
@@ -31,5 +34,11 @@
   }
   .calculatorLabel {
     @apply text-kt-yellow font-semibold;
+  }
+  .articleHeadingCircle {
+    @apply bg-kt-yellow font-black text-xl sm:text-2xl lg:text-3xl text-white flex justify-center items-center rounded-full h-8 w-8 sm:h-9 sm:w-9 lg:h-10 lg:w-10;
+  }
+  .articleHeadingH2 {
+    @apply uppercase font-semibold text-lg sm:text-xl lg:text-2xl;
   }
 }
