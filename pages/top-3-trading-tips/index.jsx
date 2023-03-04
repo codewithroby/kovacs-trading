@@ -24,7 +24,7 @@ export default function Top3TradingTipsPage() {
         <meta name="twitter:description" content={metaData.description} />
         <meta name="twitter:image" content={metaData.thumbnail} />
       </Head>
-      <div className="w-full max-w-7xl px-4 py-8 flex flex-col justify-center items-center">
+      <div className="w-full max-w-7xl flex flex-col justify-center items-center">
         <TitleAndDescriptionComponent
           title="Top 3 Trading Tips"
           description="Learn these three fundamental tips to instantly become a more
@@ -122,7 +122,7 @@ export default function Top3TradingTipsPage() {
               </p>
               <p className="text-lg py-2">
                 Don't worry if you don't feel like using the exchanges above,
-                we've compiled{" "}
+                here is{" "}
                 <a
                   href="https://coinmarketcap.com/rankings/exchanges/"
                   className="text-kt-yellow underline underline-offset-2 hover:text-kt-black"
