@@ -27,10 +27,10 @@
     @apply text-3xl sm:text-4xl lg:text-5xl font-semibold;
   }
   .calculatorInput {
-    @apply rounded p-2 ring-1 ring-kt-yellow/25 bg-gradient-to-tr from-gray-800 to-gray-900 text-gray-400 cursor-text hover:ring-kt-yellow/75;
+    @apply rounded p-2 ring-1 ring-kt-yellow/25 bg-gradient-to-tr from-kt-black to-black text-gray-400 cursor-text hover:ring-kt-yellow/75;
   }
   .calculatorPosition {
-    @apply rounded p-2 pl-3 ring-1 ring-kt-yellow/25 bg-gradient-to-tr from-gray-800 to-gray-900 text-gray-400;
+    @apply rounded p-2 pl-3 ring-1 ring-kt-yellow/25 bg-gradient-to-tr from-kt-black to-black text-gray-400;
   }
   .calculatorLabel {
     @apply text-kt-yellow font-semibold;
