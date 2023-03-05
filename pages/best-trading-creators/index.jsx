@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import TitleAndDescriptionComponent from "@/components/page/titleAndDescription";
 import TradingCreatorCardComponent from "@/pages/best-trading-creators/tradingCreatorCard";
 
