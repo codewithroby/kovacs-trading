@@ -1,4 +1,3 @@
-"use client";
 export default function CardForGridComponent(props) {
   return (
     <div className="bg-white rounded-lg shadow col-span-1">

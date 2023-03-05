@@ -1,4 +1,3 @@
-"use client";
 import { Fragment, useState } from "react";
 import { FaCopy, FaDollarSign } from "react-icons/fa";
 import { Transition } from "@headlessui/react";

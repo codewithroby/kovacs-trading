@@ -37,7 +37,7 @@ export default function Top3TradingTipsPage() {
                 Always set an appropriate position size for your trades to
                 minimize losses and maximize gains. You should never risk more
                 than 3-5% of your portfolio on each trade. As a complete
-                beginner you should aim for maximum 5-10$ per trade.
+                beginner you should aim for a maximum of 1% per trade.
               </p>
               <p className="text-lg py-2">
                 If you want to calculate the correct position size for your
@@ -64,22 +64,23 @@ export default function Top3TradingTipsPage() {
               </p>
             </div>
           </CardForGridComponent>
-          <CardForGridComponent title="Master Fundamentals">
+          <CardForGridComponent title="Fundamentals First">
             <div className="py-3 px-6">
               <p className="text-lg py-2">
-                A common mistake that beginner traders make is trying out too
-                many different strategies and using too many indicators on their
+                A common mistake that beginners make is trying out too many
+                different strategies and using too many indicators on their
                 charts before mastering the basics of trading. This approach can
                 be overwhelming and ultimately useless.
               </p>
               <p className="text-lg py-2">
                 Using indicators and different strategies is not bad, but you
-                must not skip the fundamentals. Start by getting comfortable
-                with support, resistance, and volume. Only then start using more
-                advanced trading techniques.
+                must not skip the fundamentals. Master support / resistance
+                levels, volume and learn about trading terminology first. You
+                should start using more advanced trading techniques only after
+                you master the fundamentals.
               </p>
               <p className="text-lg py-2">
-                A great place where you can find complete, beginner-friendly
+                A great place where you can find complete, beginner to advanced
                 guides is{" "}
                 <b>
                   <a
@@ -90,9 +91,8 @@ export default function Top3TradingTipsPage() {
                     EmperorBTC's Technical Analysis
                   </a>
                 </b>{" "}
-                telegram channel. I started learning how to trade here a couple
-                of years ago. Emperor offers a range of complete guides for both
-                beginner and advanced traders.
+                telegram channel. I started learning how to trade using his
+                tutorials and they are the most useful I found so far.
               </p>
             </div>
           </CardForGridComponent>
@@ -132,8 +132,7 @@ export default function Top3TradingTipsPage() {
                 is the perfect choice for you.
               </p>
               <p className="text-lg py-2">
-                Don't worry if you don't feel like using the exchanges above,
-                here is{" "}
+                If you don't feel like using the exchanges above, here is{" "}
                 <b>
                   <a
                     href="https://coinmarketcap.com/rankings/exchanges/"
@@ -143,7 +142,7 @@ export default function Top3TradingTipsPage() {
                     a list of the top crypto exchanges
                   </a>
                 </b>{" "}
-                for your convenience!
+                out there.
               </p>
             </div>
           </CardForGridComponent>
