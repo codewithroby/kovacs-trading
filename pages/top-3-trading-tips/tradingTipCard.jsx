@@ -1,4 +1,4 @@
-export default function CardForGridComponent(props) {
+export default function TradingTipCardComponent(props) {
   return (
     <div className="bg-white rounded-lg shadow col-span-1">
       <div className="p-6 bg-kt-black rounded-t-lg">

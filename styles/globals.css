@@ -41,4 +41,7 @@
   .articleHeadingH2 {
     @apply uppercase font-semibold text-xl lg:text-2xl;
   }
+  .creatorLinks {
+    @apply flex justify-center rounded-lg py-2 px-10 bg-kt-yellow hover:bg-kt-black;
+  }
 }

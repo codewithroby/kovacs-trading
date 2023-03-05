@@ -10,6 +10,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 import { IoSchoolSharp } from "react-icons/io5";
+import { HiUserGroup } from "react-icons/hi";
 import Image from "next/image";
 import iconImage from "../../public/images/brand/icon-only-light.png";
 
@@ -20,6 +21,13 @@ const howToTrade = [
       "Learn these three fundamental tips to instantly become a more profitable Trader.",
     href: "/top-3-trading-tips",
     icon: IoSchoolSharp,
+  },
+  {
+    name: "BEST TRADING CREATORS",
+    description:
+      "Learn more about trading from these creators who post daily about their trading experiences.",
+    href: "/best-trading-creators",
+    icon: HiUserGroup,
   },
 ];
 
@@ -91,7 +99,8 @@ export default function Header() {
               ref={howToTradeRef}
               className={
                 `flex items-center gap-x-1 text-sm font-semibold leading-6 hover:text-gray-50 focus:outline-none ` +
-                (pathname === "/top-3-trading-tips"
+                (pathname === "/top-3-trading-tips" ||
+                pathname === "/best-trading-creators"
                   ? "text-gray-50"
                   : "text-gray-300")
               }
@@ -301,7 +310,8 @@ export default function Header() {
                       <Disclosure.Button
                         className={
                           `flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ` +
-                          (pathname === "/top-3-trading-tips"
+                          (pathname === "/top-3-trading-tips" ||
+                          pathname === "/best-trading-creators"
                             ? "bg-gray-50"
                             : "hover:bg-gray-50")
                         }

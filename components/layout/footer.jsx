@@ -11,7 +11,7 @@ export default function Footer() {
           href="https://discord.gg/XJNbamktFD"
           target="_blank"
           className="hover:text-gray-50"
-          aria-label="Discord Server"
+          aria-label="Discord Link"
         >
           <FaDiscord className="h-6 w-6" />
         </a>
@@ -19,7 +19,7 @@ export default function Footer() {
           href="https://twitter.com/robert_cfx"
           target="_blank"
           className="hover:text-gray-50"
-          aria-label="Twitter Profile"
+          aria-label="Twitter Link"
         >
           <FaTwitter className="h-6 w-6" />
         </a>
@@ -27,7 +27,7 @@ export default function Footer() {
           href="https://instagram.com/kovacstrading"
           target="_blank"
           className="hover:text-gray-50"
-          aria-label="Instagram Profile"
+          aria-label="Instagram Link"
         >
           <FaInstagram className="h-6 w-6" />
         </a>

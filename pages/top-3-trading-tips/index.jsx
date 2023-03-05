@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import TitleAndDescriptionComponent from "@/components/page/titleAndDescription";
-import CardForGridComponent from "@/components/page/cardForGrid";
+import TradingTipCardComponent from "@/pages/top-3-trading-tips/tradingTipCard";
 
 const metaData = {
   title: "Top 3 Trading Tips - Kovacs Trading",
@@ -31,13 +31,13 @@ export default function Top3TradingTipsPage() {
             profitable Trader."
         />
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:auto-rows-fr">
-          <CardForGridComponent title="Risk Management">
-            <div className="py-3 px-6">
+          <TradingTipCardComponent title="Risk Management">
+            <div className="py-5 px-8">
               <p className="text-lg py-2">
                 Always set an appropriate position size for your trades to
                 minimize losses and maximize gains. You should never risk more
                 than 3-5% of your portfolio on each trade. As a complete
-                beginner you should aim for a maximum of 1% per trade.
+                beginner you should not risk more than 1% per trade.
               </p>
               <p className="text-lg py-2">
                 If you want to calculate the correct position size for your
@@ -63,9 +63,9 @@ export default function Top3TradingTipsPage() {
                 trades.
               </p>
             </div>
-          </CardForGridComponent>
-          <CardForGridComponent title="Fundamentals First">
-            <div className="py-3 px-6">
+          </TradingTipCardComponent>
+          <TradingTipCardComponent title="Fundamentals First">
+            <div className="py-5 px-8">
               <p className="text-lg py-2">
                 A common mistake that beginners make is trying out too many
                 different strategies and using too many indicators on their
@@ -75,29 +75,27 @@ export default function Top3TradingTipsPage() {
               <p className="text-lg py-2">
                 Using indicators and different strategies is not bad, but you
                 must not skip the fundamentals. Master support / resistance
-                levels, volume and learn about trading terminology first. You
-                should start using more advanced trading techniques only after
-                you master the fundamentals.
+                levels, how volume works and learn about trading terminology
+                first. You should start using more advanced trading techniques
+                only after you master the fundamentals.
               </p>
               <p className="text-lg py-2">
-                A great place where you can find complete, beginner to advanced
-                guides is{" "}
+                Check out{" "}
                 <b>
-                  <a
-                    href="https://t.me/EmperorbtcTA"
+                  <Link
+                    href="/best-trading-creators"
                     className="text-yellow-700 underline underline-offset-2 hover:text-kt-yellow"
-                    target="_blank"
                   >
-                    EmperorBTC's Technical Analysis
-                  </a>
+                    this page
+                  </Link>
                 </b>{" "}
-                telegram channel. I started learning how to trade using his
-                tutorials and they are the most useful I found so far.
+                to find complete, beginner to advanced trading guides made by
+                the most experienced traders.
               </p>
             </div>
-          </CardForGridComponent>
-          <CardForGridComponent title="Exchange Selection">
-            <div className="py-3 px-6">
+          </TradingTipCardComponent>
+          <TradingTipCardComponent title="Where To Trade">
+            <div className="py-5 px-8">
               <p className="text-lg py-2">
                 When you're ready to switch from a demo account to a real
                 trading account, aim for a secure, low-fee exchange that offers
@@ -145,7 +143,7 @@ export default function Top3TradingTipsPage() {
                 out there.
               </p>
             </div>
-          </CardForGridComponent>
+          </TradingTipCardComponent>
         </div>
       </div>
     </>
