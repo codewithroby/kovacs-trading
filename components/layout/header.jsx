@@ -323,7 +323,7 @@ export default function Header() {
                             href={item.href}
                             onClick={() => setMobileMenuOpen(false)}
                             className={
-                              `block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 ` +
+                              `block rounded-lg ml-6 py-1 px-3 text-sm font-semibold leading-7 text-gray-900 ` +
                               (pathname === item.href
                                 ? "bg-gray-50"
                                 : "hover:bg-gray-50")
@@ -364,7 +364,7 @@ export default function Header() {
                             href={item.href}
                             onClick={() => setMobileMenuOpen(false)}
                             className={
-                              `block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 ` +
+                              `block rounded-lg ml-6 py-1 px-3 text-sm font-semibold leading-7 text-gray-900 ` +
                               (pathname === item.href
                                 ? "bg-gray-50"
                                 : "hover:bg-gray-50")
