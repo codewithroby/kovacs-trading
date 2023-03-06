@@ -1,17 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
 import TitleAndDescriptionComponent from "@/components/page/titleAndDescription";
-import TradingTipCardComponent from "@/pages/top-3-trading-tips/tradingTipCard";
+import TradingTipCardComponent from "@/pages/getting-started/tradingTipCard";
 
 const metaData = {
-  title: "Top 3 Trading Tips - Kovacs Trading",
+  title: "Getting Started - Kovacs Trading",
   description:
-    "Boost your trading results with our top 3 trading tips for beginners. Our expert tips cover essential strategies such as risk management and technical analysis to help you succeed in the market.",
-  thumbnail:
-    "https://kovacstrading.com/images/thumbnails/top-3-trading-tips.jpg",
+    "Here's a beginner's guide that contains the essential information you need to start trading.",
+  thumbnail: "https://kovacstrading.com/images/thumbnails/getting-started.jpg",
 };
 
-export default function Top3TradingTipsPage() {
+export default function GettingStartedPage() {
   return (
     <>
       <Head>
@@ -26,11 +25,49 @@ export default function Top3TradingTipsPage() {
       </Head>
       <div className="w-full max-w-7xl flex flex-col justify-center items-center">
         <TitleAndDescriptionComponent
-          title="Top 3 Trading Tips"
-          description="Learn these three fundamental tips to instantly become a more
-            profitable Trader."
+          title="Getting Started"
+          description="Here's a beginner's guide that contains the essential information you need to start trading."
         />
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:auto-rows-fr">
+          <TradingTipCardComponent title="Fundamentals First">
+            <div className="py-5 px-8">
+              <p className="text-lg py-2">
+                A common mistake that beginners make is trying out too many
+                different strategies and using too many indicators on their
+                charts before mastering the basics of trading. This approach can
+                be overwhelming and ultimately useless.
+              </p>
+              <p className="text-lg py-2">
+                Using indicators and different strategies is not bad, but you
+                must not skip the fundamentals. Master support / resistance
+                levels, how volume works and learn about{" "}
+                <b>
+                  {" "}
+                  <Link
+                    href="/trading-terminology"
+                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                  >
+                    trading terminology
+                  </Link>
+                </b>{" "}
+                first. You should start using more advanced trading techniques
+                only after you master the fundamentals.
+              </p>
+              <p className="text-lg py-2">
+                Check out{" "}
+                <b>
+                  <Link
+                    href="/best-trading-creators"
+                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                  >
+                    this page
+                  </Link>
+                </b>{" "}
+                to find complete, beginner to advanced trading guides made by
+                the most experienced traders.
+              </p>
+            </div>
+          </TradingTipCardComponent>
           <TradingTipCardComponent title="Risk Management">
             <div className="py-5 px-8">
               <p className="text-lg py-2">
@@ -45,7 +82,7 @@ export default function Top3TradingTipsPage() {
                 <b>
                   <Link
                     href="/position-size-calculator"
-                    className="text-yellow-700 underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
                   >
                     Position Size Calculator
                   </Link>
@@ -64,36 +101,7 @@ export default function Top3TradingTipsPage() {
               </p>
             </div>
           </TradingTipCardComponent>
-          <TradingTipCardComponent title="Fundamentals First">
-            <div className="py-5 px-8">
-              <p className="text-lg py-2">
-                A common mistake that beginners make is trying out too many
-                different strategies and using too many indicators on their
-                charts before mastering the basics of trading. This approach can
-                be overwhelming and ultimately useless.
-              </p>
-              <p className="text-lg py-2">
-                Using indicators and different strategies is not bad, but you
-                must not skip the fundamentals. Master support / resistance
-                levels, how volume works and learn about trading terminology
-                first. You should start using more advanced trading techniques
-                only after you master the fundamentals.
-              </p>
-              <p className="text-lg py-2">
-                Check out{" "}
-                <b>
-                  <Link
-                    href="/best-trading-creators"
-                    className="text-yellow-700 underline underline-offset-2 hover:text-kt-yellow"
-                  >
-                    this page
-                  </Link>
-                </b>{" "}
-                to find complete, beginner to advanced trading guides made by
-                the most experienced traders.
-              </p>
-            </div>
-          </TradingTipCardComponent>
+
           <TradingTipCardComponent title="Where To Trade">
             <div className="py-5 px-8">
               <p className="text-lg py-2">
@@ -107,7 +115,7 @@ export default function Top3TradingTipsPage() {
                 <b>
                   <a
                     href={process.env.NEXT_PUBLIC_BYBIT_REFERRAL_LINK}
-                    className="text-yellow-700 underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
                     target="_blank"
                   >
                     ByBit
@@ -121,7 +129,7 @@ export default function Top3TradingTipsPage() {
                 <b>
                   <a
                     href={process.env.NEXT_PUBLIC_BINANCE_REFERRAL_LINK}
-                    className="text-yellow-700 underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
                     target="_blank"
                   >
                     Binance
@@ -134,7 +142,7 @@ export default function Top3TradingTipsPage() {
                 <b>
                   <a
                     href="https://coinmarketcap.com/rankings/exchanges/"
-                    className="text-yellow-700 underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
                     target="_blank"
                   >
                     a list of the top crypto exchanges

@@ -1,7 +1,7 @@
 export default function TradingTipCardComponent(props) {
   return (
     <div className="bg-white rounded-lg shadow col-span-1">
-      <div className="p-6 bg-kt-black rounded-t-lg">
+      <div className="p-4 bg-kt-black rounded-t-lg">
         <h2 className="articleHeadingH2 text-center text-white">
           {props.title}
         </h2>

@@ -17,8 +17,8 @@
 }
 
 @layer base {
-  nav a,
-  nav button {
+  a,
+  button {
     @apply transition-colors duration-300;
   }
 }
@@ -48,7 +48,15 @@
   .articleHeadingH2 {
     @apply uppercase font-semibold text-xl lg:text-2xl;
   }
+  .terminologyHeadingH2 {
+    @apply uppercase font-semibold text-2xl md:text-3xl lg:text-4xl;
+  }
   .creatorLinks {
-    @apply flex justify-center rounded-lg py-2 px-10 bg-kt-yellow hover:bg-kt-black transition-colors duration-300;
+    @apply flex justify-center rounded-lg py-2 px-10 bg-kt-yellow hover:bg-kt-black transition-colors duration-300 text-white;
+  }
+  .customGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: masonry;
   }
 }

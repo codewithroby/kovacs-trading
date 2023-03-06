@@ -10,6 +10,7 @@ module.exports = {
         kt: {
           black: "#121212",
           yellow: "#F3BA2F",
+          darkYellow: "#C39000",
         },
       },
     },
