@@ -39,8 +39,29 @@ export default function GettingStartedPage() {
               </p>
               <p className="text-lg py-2">
                 Using indicators and different strategies is not bad, but you
-                must not skip the fundamentals. Master support / resistance
-                levels, how volume works and learn about{" "}
+                must not skip the fundamentals. Master
+                <b>
+                  {" "}
+                  <a
+                    target="_blank"
+                    href="https://www.investopedia.com/trading/support-and-resistance-basics/"
+                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                  >
+                    support / resistance
+                  </a>
+                </b>{" "}
+                levels, how{" "}
+                <b>
+                  {" "}
+                  <a
+                    target="_blank"
+                    href="https://www.investopedia.com/terms/v/volumeoftrade.asp"
+                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                  >
+                    volume
+                  </a>
+                </b>{" "}
+                works and learn about{" "}
                 <b>
                   {" "}
                   <Link
