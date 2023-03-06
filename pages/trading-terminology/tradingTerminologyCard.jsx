@@ -12,7 +12,11 @@ export default function TradingTerminologyCardComponent({
           </h2>
         </div>
         <span className="w-[75px] my-4 border-b-2 border-kt-yellow"></span>
-        <div className={`p-6 pt-0` + (link ? " border-b border-gray-200" : "")}>
+        <div
+          className={
+            `w-full p-6 pt-0` + (link ? " border-b border-gray-200" : "")
+          }
+        >
           <p className="text-lg text-kt-black/75 text-center">{children}</p>
         </div>
         {link ? (

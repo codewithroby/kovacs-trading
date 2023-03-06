@@ -30,7 +30,7 @@ export default function GettingStartedPage() {
         />
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:auto-rows-fr">
           <TradingTipCardComponent title="Fundamentals First">
-            <div className="py-5 px-8">
+            <div className="py-5 px-8 text-kt-black/75">
               <p className="text-lg py-2">
                 A common mistake that beginners make is trying out too many
                 different strategies and using too many indicators on their
@@ -45,7 +45,7 @@ export default function GettingStartedPage() {
                   <a
                     target="_blank"
                     href="https://www.investopedia.com/trading/support-and-resistance-basics/"
-                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-black underline underline-offset-2 hover:text-kt-yellow"
                   >
                     support / resistance
                   </a>
@@ -56,7 +56,7 @@ export default function GettingStartedPage() {
                   <a
                     target="_blank"
                     href="https://www.investopedia.com/terms/v/volumeoftrade.asp"
-                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-black underline underline-offset-2 hover:text-kt-yellow"
                   >
                     volume
                   </a>
@@ -66,7 +66,7 @@ export default function GettingStartedPage() {
                   {" "}
                   <Link
                     href="/trading-terminology"
-                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-black underline underline-offset-2 hover:text-kt-yellow"
                   >
                     trading terminology
                   </Link>
@@ -79,7 +79,7 @@ export default function GettingStartedPage() {
                 <b>
                   <Link
                     href="/best-trading-creators"
-                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-black underline underline-offset-2 hover:text-kt-yellow"
                   >
                     this page
                   </Link>
@@ -90,7 +90,7 @@ export default function GettingStartedPage() {
             </div>
           </TradingTipCardComponent>
           <TradingTipCardComponent title="Risk Management">
-            <div className="py-5 px-8">
+            <div className="py-5 px-8 text-kt-black/75">
               <p className="text-lg py-2">
                 Always set an appropriate position size for your trades to
                 minimize losses and maximize gains. You should never risk more
@@ -103,7 +103,7 @@ export default function GettingStartedPage() {
                 <b>
                   <Link
                     href="/position-size-calculator"
-                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-black underline underline-offset-2 hover:text-kt-yellow"
                   >
                     Position Size Calculator
                   </Link>
@@ -124,7 +124,7 @@ export default function GettingStartedPage() {
           </TradingTipCardComponent>
 
           <TradingTipCardComponent title="Where To Trade">
-            <div className="py-5 px-8">
+            <div className="py-5 px-8 text-kt-black/75">
               <p className="text-lg py-2">
                 When you're ready to switch from a demo account to a real
                 trading account, aim for a secure, low-fee exchange that offers
@@ -136,7 +136,7 @@ export default function GettingStartedPage() {
                 <b>
                   <a
                     href={process.env.NEXT_PUBLIC_BYBIT_REFERRAL_LINK}
-                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-black underline underline-offset-2 hover:text-kt-yellow"
                     target="_blank"
                   >
                     ByBit
@@ -150,7 +150,7 @@ export default function GettingStartedPage() {
                 <b>
                   <a
                     href={process.env.NEXT_PUBLIC_BINANCE_REFERRAL_LINK}
-                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-black underline underline-offset-2 hover:text-kt-yellow"
                     target="_blank"
                   >
                     Binance
@@ -163,7 +163,7 @@ export default function GettingStartedPage() {
                 <b>
                   <a
                     href="https://coinmarketcap.com/rankings/exchanges/"
-                    className="text-kt-darkYellow underline underline-offset-2 hover:text-kt-yellow"
+                    className="text-kt-black underline underline-offset-2 hover:text-kt-yellow"
                     target="_blank"
                   >
                     a list of the top crypto exchanges
