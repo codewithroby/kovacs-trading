@@ -34,9 +34,7 @@ export default function TradingCreatorCardComponent({
         <p className="py-4 text-kt-black/75 text-center">{description}</p>
       </div>
       <div className="p-4">
-        <p className="text-center font-semibold pb-3 uppercase">
-          Find Out More
-        </p>
+        <p className="text-center font-semibold pb-3 uppercase">Check It Out</p>
         <div className="rounded-lg w-full flex justify-center text-white space-x-2">
           {twitter ? (
             <a

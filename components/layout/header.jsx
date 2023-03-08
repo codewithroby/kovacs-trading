@@ -11,12 +11,7 @@ import {
 import { ChevronDownIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 import { GiTrophy, GiOpenBook } from "react-icons/gi";
 import { TiGroup } from "react-icons/ti";
-import {
-  FaTwitter,
-  FaInstagram,
-  FaDiscord,
-  FaCalculator,
-} from "react-icons/fa";
+import { FaTwitter, FaCalculator } from "react-icons/fa";
 import iconImage from "../../public/images/brand/icon-only-light.png";
 
 const learnToTrade = [
@@ -278,22 +273,6 @@ export default function Header() {
             >
               <FaTwitter className="h-5 w-5" />
             </a>
-            <a
-              href="https://discord.gg/XJNbamktFD"
-              target="_blank"
-              className="hover:text-gray-50"
-              aria-label="Discord Link"
-            >
-              <FaDiscord className="h-5 w-5" />
-            </a>
-            <a
-              href="https://instagram.com/kovacstrading"
-              target="_blank"
-              className="hover:text-gray-50"
-              aria-label="Instagram Link"
-            >
-              <FaInstagram className="h-5 w-5" />
-            </a>
           </div>
         </div>
       </nav>
@@ -432,7 +411,7 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <p className="text-kt-black text-base text-center font-bold pb-4">
-                  JOIN THE COMMUNITY
+                  CONNECT WITH US
                 </p>
                 <div className="w-full flex justify-center gap-4 text-white">
                   <a
@@ -442,22 +421,6 @@ export default function Header() {
                     aria-label="Twitter Link"
                   >
                     <FaTwitter className="h-5 w-5" />
-                  </a>
-                  <a
-                    href="https://discord.gg/XJNbamktFD"
-                    target="_blank"
-                    className="max-w-[100px] flex-1 flex justify-center rounded-lg py-2 bg-kt-yellow hover:bg-kt-black"
-                    aria-label="Discord Link"
-                  >
-                    <FaDiscord className="h-5 w-5" />
-                  </a>
-                  <a
-                    href="https://instagram.com/kovacstrading"
-                    target="_blank"
-                    className="max-w-[100px] flex-1 flex justify-center rounded-lg py-2 bg-kt-yellow hover:bg-kt-black"
-                    aria-label="Instagram Link"
-                  >
-                    <FaInstagram className="h-5 w-5" />
                   </a>
                 </div>
               </div>
