@@ -78,7 +78,7 @@ export default function GettingStartedPage() {
                 Check out{" "}
                 <b>
                   <Link
-                    href="/best-trading-creators"
+                    href="/pdf-files"
                     className="text-kt-black underline underline-offset-2 hover:text-kt-yellow"
                   >
                     this page
