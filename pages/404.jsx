@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import TitleAndDescriptionComponent from "@/components/page/titleAndDescription";
 import errorImage from "../public/images/illustrations/server-down.svg";
 
@@ -36,12 +35,13 @@ export default function Error404Page() {
           title="Page Not Found"
           description={metaData.description}
         />
-        <Link
+        <a
           href="/"
+          alt="Go Back Home"
           className="creatorLinks uppercase font-semibold text-lg py-3"
         >
           Go Back Home
-        </Link>
+        </a>
       </div>
     </>
   );

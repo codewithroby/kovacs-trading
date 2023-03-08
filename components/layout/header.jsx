@@ -11,7 +11,7 @@ import {
 import { ChevronDownIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 import { GiTrophy, GiOpenBook } from "react-icons/gi";
 import { TiGroup } from "react-icons/ti";
-import { FaTwitter, FaCalculator } from "react-icons/fa";
+import { FaTwitter, FaCalculator, FaFilePdf } from "react-icons/fa";
 import iconImage from "../../public/images/brand/icon-only-light.png";
 
 const learnToTrade = [
@@ -28,6 +28,14 @@ const learnToTrade = [
       "Learn more about trading from these creators who post daily about their trading experiences.",
     href: "/best-trading-creators",
     icon: TiGroup,
+  },
+  {
+    name: "PDF FILES",
+    description:
+      "The best PDF files created by experienced traders. Access their knowledge and expertise to take your trading to the next level. Start learning today!",
+    href: "/pdf-files",
+    icon: FaFilePdf,
+    colSpan: 2,
   },
   {
     name: "TRADING TERMINOLOGY",
@@ -108,7 +116,9 @@ export default function Header() {
               className={
                 `flex items-center gap-x-1 text-sm font-semibold leading-6 hover:text-gray-50 focus:outline-none ` +
                 (pathname === "/getting-started" ||
-                pathname === "/best-trading-creators"
+                pathname === "/best-trading-creators" ||
+                pathname === "/pdf-files" ||
+                pathname === "/trading-terminology"
                   ? "text-gray-50"
                   : "text-gray-300")
               }
@@ -324,7 +334,9 @@ export default function Header() {
                         className={
                           `flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ` +
                           (pathname === "/getting-started" ||
-                          pathname === "/best-trading-creators"
+                          pathname === "/best-trading-creators" ||
+                          pathname === "/pdf-files" ||
+                          pathname === "/trading-terminology"
                             ? "bg-gray-50"
                             : "hover:bg-gray-50")
                         }

@@ -10,7 +10,7 @@ const metaData = {
     "https://kovacstrading.com/images/thumbnails/trading-terminology.jpg",
 };
 
-export default function BestTradingCreatorsPage() {
+export default function TradingTerminologyPage() {
   return (
     <>
       <Head>

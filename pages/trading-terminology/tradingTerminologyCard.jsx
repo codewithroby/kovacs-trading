@@ -26,7 +26,7 @@ export default function TradingTerminologyCardComponent({
               target="_blank"
               className="creatorLinks px-4 uppercase font-semibold"
             >
-              Find Out More
+              Read More
             </a>
           </div>
         ) : (
