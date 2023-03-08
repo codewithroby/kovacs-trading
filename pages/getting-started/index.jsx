@@ -28,7 +28,7 @@ export default function GettingStartedPage() {
           title="Getting Started"
           description="Here's a beginner's guide that contains the essential information you need to start trading."
         />
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:auto-rows-fr">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 md:auto-rows-fr">
           <TradingTipCardComponent title="Fundamentals First">
             <div className="py-5 px-8 text-kt-black/75">
               <p className="text-lg py-2">
