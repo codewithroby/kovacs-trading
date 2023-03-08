@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function PdfFileCardComponent({
   link = null,
   title,
@@ -24,22 +22,23 @@ export default function PdfFileCardComponent({
         </div>
         {link ? (
           <div className="p-4 w-full flex flex-col sm:flex-row gap-2">
-            <Link
-              locale={false}
+            <a
               href={link}
               target="_blank"
+              alt={`download ${title}`}
               rel="noopener noreferrer"
               className="creatorLinks px-4 uppercase font-semibold flex-1"
             >
               Download PDF
-            </Link>
-            <Link
+            </a>
+            <a
               href={creator}
+              alt="creator profile"
               target="_blank"
               className="creatorLinks px-4 uppercase font-semibold flex-1"
             >
-              PDF Author
-            </Link>
+              Author
+            </a>
           </div>
         ) : (
           ""
