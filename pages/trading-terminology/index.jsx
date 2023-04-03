@@ -23,7 +23,7 @@ export default function TradingTerminologyPage() {
         <meta name="twitter:description" content={metaData.description} />
         <meta name="twitter:image" content={metaData.thumbnail} />
       </Head>
-      <div className="w-full max-w-7xl flex flex-col justify-center items-center">
+      <div className="px-4 sm:px-8 py-[7.5vh] sm:py-[15vh] w-full max-w-7xl flex flex-col justify-center items-center">
         <TitleAndDescriptionComponent
           title="Trading Terminology"
           description="Learning the terminology of trading can help you understand the specific terms used in trading, which can improve your comprehension of trading materials and communication with other traders."

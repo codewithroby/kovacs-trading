@@ -23,7 +23,7 @@ export default function BestTradingCreatorsPage() {
         <meta name="twitter:description" content={metaData.description} />
         <meta name="twitter:image" content={metaData.thumbnail} />
       </Head>
-      <div className="w-full max-w-7xl flex flex-col justify-center items-center">
+      <div className="px-4 sm:px-8 py-[7.5vh] sm:py-[15vh] w-full max-w-7xl flex flex-col justify-center items-center">
         <TitleAndDescriptionComponent
           title="Best Trading Creators"
           description="Learn more about trading from these creators who post daily about their trading experiences."
@@ -47,7 +47,7 @@ export default function BestTradingCreatorsPage() {
             creator="CryptoSoulz"
             avatar="crypto-soulz"
             description="CryptoSoulz is a Crypto Trader who has made a helpful Trading PDF specifically designed for beginners. He provides both free and VIP trading material. You can join his expanding Discord community 'Soulz Crime Family' to talk and connect with like-minded people."
-            twitter="https://twitter.com/_Soulz"
+            twitter="https://twitter.com/SoulzBTC"
             discord="https://discord.gg/umVkVHbcfe"
           />
           <TradingCreatorCardComponent

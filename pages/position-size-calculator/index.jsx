@@ -23,7 +23,7 @@ export default function PositionSizeCalculatorPage() {
         <meta name="twitter:description" content={metaData.description} />
         <meta name="twitter:image" content={metaData.thumbnail} />
       </Head>
-      <div className="max-w-5xl flex flex-col justify-center items-center">
+      <div className="px-4 sm:px-8 py-[7.5vh] sm:py-[10vh] max-w-5xl flex flex-col justify-center items-center">
         <TitleAndDescriptionComponent
           title="Position Size Calculator"
           description="Calculate your trade's position size quickly and easily with our free

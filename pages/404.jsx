@@ -23,7 +23,7 @@ export default function Error404Page() {
         <meta name="twitter:description" content={metaData.description} />
         <meta name="twitter:image" content={metaData.thumbnail} />
       </Head>
-      <div className="w-full max-w-7xl flex flex-col justify-center items-center">
+      <div className="w-full max-w-7xl flex flex-col justify-center items-center py-[10vh] sm:py-[15vh]">
         <Image
           src={errorImage}
           width={350}
@@ -38,7 +38,7 @@ export default function Error404Page() {
         <a
           href="/"
           alt="Go Back Home"
-          className="creatorLinks uppercase font-semibold text-lg py-3"
+          className="btnLight uppercase font-semibold text-lg py-3"
         >
           Go Back Home
         </a>

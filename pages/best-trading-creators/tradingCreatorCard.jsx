@@ -19,7 +19,7 @@ export default function TradingCreatorCardComponent({
 }) {
   return (
     <div className="bg-white rounded-lg shadow col-span-1 flex flex-col">
-      <div className="flex-1 pt-8 px-8 flex flex-col items-center border-b border-gray-200">
+      <div className="flex-1 pt-8 px-8 flex flex-col items-center border-b border-gray-100">
         <Image
           src={`/images/creators/` + avatar + `.jpg`}
           height={80}
@@ -40,7 +40,7 @@ export default function TradingCreatorCardComponent({
             <a
               href={twitter}
               target="_blank"
-              className="creatorLinks"
+              className="btnLight"
               aria-label="Twitter Link"
             >
               <FaTwitter className="h-5 w-5" />
@@ -52,7 +52,7 @@ export default function TradingCreatorCardComponent({
             <a
               href={telegram}
               target="_blank"
-              className="creatorLinks"
+              className="btnLight"
               aria-label="Telegram Link"
             >
               <FaTelegramPlane className="h-5 w-5" />
@@ -64,7 +64,7 @@ export default function TradingCreatorCardComponent({
             <a
               href={discord}
               target="_blank"
-              className="creatorLinks"
+              className="btnLight"
               aria-label="Discord Link"
             >
               <FaDiscord className="h-5 w-5" />
@@ -76,7 +76,7 @@ export default function TradingCreatorCardComponent({
             <a
               href={youtube}
               target="_blank"
-              className="creatorLinks"
+              className="btnLight"
               aria-label="Youtube Link"
             >
               <FaYoutube className="h-5 w-5" />
@@ -88,7 +88,7 @@ export default function TradingCreatorCardComponent({
             <a
               href={instagram}
               target="_blank"
-              className="creatorLinks"
+              className="btnLight"
               aria-label="Instagram Link"
             >
               <FaInstagram className="h-5 w-5" />

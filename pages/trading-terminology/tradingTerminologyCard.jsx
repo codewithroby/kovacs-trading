@@ -24,7 +24,7 @@ export default function TradingTerminologyCardComponent({
             <a
               href={link}
               target="_blank"
-              className="creatorLinks px-4 uppercase font-semibold"
+              className="btnLight px-4 uppercase font-semibold"
             >
               Read More
             </a>

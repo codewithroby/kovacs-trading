@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -14,9 +18,6 @@
   input:focus {
     outline: none;
   }
-}
-
-@layer base {
   a,
   button {
     @apply transition-colors duration-300;
@@ -51,9 +52,19 @@
   .terminologyHeadingH2 {
     @apply uppercase font-semibold text-2xl md:text-3xl lg:text-4xl;
   }
-  .creatorLinks {
-    @apply flex justify-center rounded-lg py-2 px-10 bg-kt-yellow hover:bg-kt-black transition-colors duration-300 text-white;
+
+  .btnWhite {
+    @apply flex justify-center rounded-lg py-2 px-10 bg-white hover:bg-kt-yellow hover:text-white transition-colors duration-300 text-kt-black cursor-pointer;
   }
+
+  .btnLight {
+    @apply flex justify-center rounded-lg py-2 px-10 bg-kt-yellow hover:bg-kt-black transition-colors duration-300 text-white cursor-pointer;
+  }
+
+  .btnDark {
+    @apply flex justify-center rounded-lg py-2 px-10 bg-kt-black hover:bg-kt-yellow transition-colors duration-300 text-white cursor-pointer;
+  }
+
   .customGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

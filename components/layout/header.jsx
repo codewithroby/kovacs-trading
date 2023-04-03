@@ -9,18 +9,24 @@ import {
   EnvelopeIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
-import { GiTrophy, GiOpenBook } from "react-icons/gi";
+import { GiOpenBook } from "react-icons/gi";
 import { TiGroup } from "react-icons/ti";
-import { FaTwitter, FaCalculator, FaFilePdf } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaCalculator,
+  FaFilePdf,
+  FaInstagram,
+} from "react-icons/fa";
 import iconImage from "../../public/images/brand/icon-only-light.png";
 
 const learnToTrade = [
   {
-    name: "GETTING STARTED",
+    name: "PDF FILES",
     description:
-      "Here's a beginner's guide that contains the essential information you need to start trading.",
-    href: "/getting-started",
-    icon: GiTrophy,
+      "The best PDF files created by experienced traders. Access their knowledge and expertise to take your trading to the next level.",
+    href: "/pdf-files",
+    icon: FaFilePdf,
+    colSpan: 2,
   },
   {
     name: "BEST TRADING CREATORS",
@@ -28,13 +34,6 @@ const learnToTrade = [
       "Learn more about trading from these creators who post daily about their trading experiences.",
     href: "/best-trading-creators",
     icon: TiGroup,
-  },
-  {
-    name: "PDF FILES",
-    description:
-      "The best PDF files created by experienced traders. Access their knowledge and expertise to take your trading to the next level. Start learning today!",
-    href: "/pdf-files",
-    icon: FaFilePdf,
     colSpan: 2,
   },
   {
@@ -200,7 +199,7 @@ export default function Header() {
                   : "text-gray-300")
               }
             >
-              TRADING TOOLS
+              UTILITIES
               <ChevronDownIcon
                 className="h-5 w-5 flex-none"
                 aria-hidden="true"
@@ -265,7 +264,17 @@ export default function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-
+          <Link
+            href="/best-crypto-exchange"
+            className={
+              `text-sm font-semibold leading-6 hover:text-gray-50 ` +
+              (pathname === "/best-crypto-exchange"
+                ? "text-gray-50"
+                : "text-gray-300")
+            }
+          >
+            BEST CRYPTO EXCHANGE
+          </Link>
           {/* <!--<Link
             href="#"
             className="text-sm font-semibold leading-6 text-gray-300 hover:text-gray-50"
@@ -282,6 +291,14 @@ export default function Header() {
               aria-label="Twitter Link"
             >
               <FaTwitter className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/lostromanianboy/"
+              target="_blank"
+              className="hover:text-gray-50"
+              aria-label="Instagram Link"
+            >
+              <FaInstagram className="h-5 w-5" />
             </a>
           </div>
         </div>
@@ -384,7 +401,7 @@ export default function Header() {
                             : "hover:bg-gray-50")
                         }
                       >
-                        TRADING TOOLS
+                        UTILITIES
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
@@ -414,6 +431,20 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
+                <div className="-mx-3">
+                  <Link
+                    href="/best-crypto-exchange"
+                    className={
+                      `flex w-full rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ` +
+                      (pathname === "/best-crypto-exchange"
+                        ? "bg-gray-50"
+                        : "hover:bg-gray-50")
+                    }
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    BEST CRYPTO EXCHANGE
+                  </Link>
+                </div>
                 {/*<Link
                   href="#"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -423,7 +454,7 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <p className="text-kt-black text-base text-center font-bold pb-4">
-                  CONNECT WITH US
+                  GET IN TOUCH
                 </p>
                 <div className="w-full flex justify-center gap-4 text-white">
                   <a
@@ -433,6 +464,14 @@ export default function Header() {
                     aria-label="Twitter Link"
                   >
                     <FaTwitter className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/lostromanianboy/"
+                    target="_blank"
+                    className="max-w-[100px] flex-1 flex justify-center rounded-lg py-2 bg-kt-yellow hover:bg-kt-black"
+                    aria-label="Instagram Link"
+                  >
+                    <FaInstagram className="h-5 w-5" />
                   </a>
                 </div>
               </div>
