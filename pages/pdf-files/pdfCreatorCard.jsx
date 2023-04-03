@@ -208,7 +208,7 @@ export function PdfCardComponentLeft({ title, description, url }) {
       <a
         target="_blank"
         href={`/files/pdf/${url}.pdf`}
-        className="max-w-[180px] btnLight px-4 py-2 font-bold flex items-center"
+        className="max-w-[180px] btnLightTwo px-4 py-2 font-bold flex items-center"
       >
         <FaFilePdf className="mr-1 text-white h-5 w-5" />
         DOWNLOAD
@@ -231,7 +231,7 @@ export function PdfCardComponentRight({ title, description, url }) {
       <a
         target="_blank"
         href={`/files/pdf/${url}.pdf`}
-        className="max-w-[180px] btnLight px-4 py-2 font-bold flex items-center"
+        className="max-w-[180px] btnLightTwo px-4 py-2 font-bold flex items-center"
       >
         <FaFilePdf className="mr-1 text-white h-5 w-5" />
         DOWNLOAD

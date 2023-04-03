@@ -61,6 +61,10 @@
     @apply flex justify-center rounded-lg py-2 px-10 bg-kt-yellow hover:bg-kt-black transition-colors duration-300 text-white cursor-pointer;
   }
 
+  .btnLightTwo {
+    @apply flex justify-center rounded-lg py-2 px-10 bg-kt-darkYellow hover:bg-kt-black transition-colors duration-300 text-white cursor-pointer;
+  }
+
   .btnDark {
     @apply flex justify-center rounded-lg py-2 px-10 bg-kt-black hover:bg-kt-yellow transition-colors duration-300 text-white cursor-pointer;
   }
