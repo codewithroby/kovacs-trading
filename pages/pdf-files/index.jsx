@@ -1,7 +1,6 @@
 import Head from "next/head";
 import TitleAndDescriptionComponent from "@/components/page/titleAndDescription";
-import {
-  PdfCreatorCardComponentAvatarLeft,
+import PdfCreatorCardComponentAvatarLeft, {
   PdfCreatorCardComponentAvatarRight,
   PdfCardComponentLeft,
   PdfCardComponentRight,
