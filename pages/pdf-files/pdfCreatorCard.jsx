@@ -8,7 +8,7 @@ import {
   FaFilePdf,
 } from "react-icons/fa";
 
-export function PdfCreatorCardComponentAvatarLeft({
+export default function PdfCreatorCardComponentAvatarLeft({
   creator,
   avatar,
   twitter = null,

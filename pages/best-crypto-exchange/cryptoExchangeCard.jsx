@@ -1,20 +1,5 @@
 import Image from "next/image";
 
-const referralLinks = {
-  bybit: {
-    code: "JOKW3R",
-    link: "https://www.bybit.com/invite?ref=JOKW3R",
-  },
-  mexc: {
-    code: "1bDFL",
-    link: "https://www.mexc.com/register?inviteCode=1bDFL",
-  },
-  binance: {
-    code: "DD1CK7PV",
-    link: "https://accounts.binance.com/register?ref=DD1CK7PV",
-  },
-};
-
 export default function CryptoExchangeCardComponent({
   exchange,
   logo,
