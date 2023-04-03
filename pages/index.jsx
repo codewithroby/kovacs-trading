@@ -146,7 +146,7 @@ export default function HomePage() {
               here are the top 3 picks from us.
             </p>
             <Link
-              href="/best-crypto-exchanges"
+              href="/best-crypto-exchange"
               className="self-center lg:self-end max-w-[200px] btnLight px-6 py-3 font-bold"
             >
               TOP 3 EXCHANGES
