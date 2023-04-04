@@ -11,12 +11,12 @@ export default function Layout({ children }) {
       </main>
       <Footer />
       <a
-        className="fixed bottom-8 right-8 h-14 w-14 bg-kt-darkYellow shadow flex justify-center items-center rounded-full"
+        className="fixed bottom-5 right-5 h-11 w-11 md:bottom-8 md:right-8 md:h-14 md:w-14 bg-kt-darkYellow shadow flex justify-center items-center rounded-full"
         href="#"
         aria-label="Back to Top"
       >
         <BsFillArrowUpCircleFill
-          className="w-7 h-7 text-white
+          className="w-6 h-6 md:w-7 md:h-7 text-white
       "
         />
       </a>
