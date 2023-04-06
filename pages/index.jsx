@@ -61,10 +61,10 @@ export default function HomePage() {
             className="mb-8 lg:mb-0"
           />
           <div className="lg:pl-12 flex-1 flex flex-col text-center lg:text-left">
-            <h1 className="headingDark big uppercase">PDF Files</h1>
+            <h1 className="headingDark big uppercase">PDF Guides</h1>
             <span className="w-32 my-6 border-b-2 border-kt-yellow self-center lg:self-start"></span>
             <p className="mb-6 text-lg sm:text-xl text-gray-800">
-              The best PDF files created by experienced traders. Access their
+              The best PDF guides created by experienced traders. Access their
               knowledge and expertise to take your trading to the next level.
             </p>
             <Link
@@ -136,9 +136,7 @@ export default function HomePage() {
       <section className="w-full py-[10vh] sm:py-[15vh] flex justify-center">
         <div className="flex-1 px-4 sm:px-8 flex flex-col-reverse lg:flex-row items-center justify-center max-w-7xl">
           <div className="lg:pr-12 flex-1 flex flex-col text-center lg:text-right">
-            <h1 className="headingDark big uppercase">
-              Top 3 Crypto Exchanges
-            </h1>
+            <h1 className="headingDark big uppercase">Best Crypto Exchanges</h1>
             <span className="w-32 my-6 border-b-2 border-kt-yellow self-center lg:self-end"></span>
             <p className="mb-6 text-lg sm:text-xl text-gray-800">
               You are starting your trading journey but you are not sure which
@@ -147,9 +145,9 @@ export default function HomePage() {
             </p>
             <Link
               href="/best-crypto-exchange"
-              className="self-center lg:self-end max-w-[200px] btnLight px-6 py-3 font-bold"
+              className="self-center lg:self-end max-w-[250px] btnLight px-6 py-3 font-bold"
             >
-              TOP 3 EXCHANGES
+              BEST CRYPTO EXCHANGE
             </Link>
           </div>
           <Image

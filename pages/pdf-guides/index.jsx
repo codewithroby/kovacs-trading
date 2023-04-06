@@ -4,12 +4,12 @@ import PdfCreatorCardComponentAvatarLeft, {
   PdfCreatorCardComponentAvatarRight,
   PdfCardComponentLeft,
   PdfCardComponentRight,
-} from "@/pages/pdf-files/pdfCreatorCard";
+} from "@/pages/pdf-guides/pdfCreatorCard";
 
 const metaData = {
-  title: "PDF Files - Kovacs Trading",
+  title: "PDF Guides - Kovacs Trading",
   description:
-    "The best PDF files created by experienced traders. Access their knowledge and expertise to take your trading to the next level. Start learning today!",
+    "The best PDF guides created by experienced traders. Access their knowledge and expertise to take your trading to the next level. Start learning today!",
   thumbnail: "https://kovacstrading.com/images/thumbnails/pdf-files.jpg",
 };
 
@@ -28,8 +28,8 @@ export default function PdfFilesPage() {
       </Head>
       <div className="px-4 sm:px-8 py-[7.5vh] sm:py-[15vh] w-full max-w-7xl flex flex-col justify-center items-center">
         <TitleAndDescriptionComponent
-          title="PDF Files"
-          description="The best PDF files created by experienced traders. Access their knowledge and expertise to take your trading to the next level."
+          title="PDF Guides"
+          description="The best PDF guides created by experienced traders. Access their knowledge and expertise to take your trading to the next level."
         />
         <div className="w-full flex flex-col gap-8">
           <PdfCreatorCardComponentAvatarLeft
@@ -37,7 +37,7 @@ export default function PdfFilesPage() {
             avatar="crypto-soulz"
             twitter="https://twitter.com/SoulzBTC"
             discord="https://discord.gg/umVkVHbcfe"
-            count={2}
+            count={3}
           >
             <PdfCardComponentRight
               title={`Soulz's Playbook`}
@@ -49,6 +49,11 @@ export default function PdfFilesPage() {
               title={`Supply & Demand`}
               description={`A complete guide to supply and demand in trading.`}
               url={`soulzs-supply-and-demand`}
+            />
+            <PdfCardComponentRight
+              title={`Building A Diversified Crypto Portfolio`}
+              description={`A complete guide on building a diversified Cryptocurrencies Portfolio.`}
+              url={`soulzs-building-a-diversified-portfolio`}
             />
           </PdfCreatorCardComponentAvatarLeft>
           <PdfCreatorCardComponentAvatarRight

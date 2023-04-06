@@ -27,7 +27,7 @@ export default function BestCryptoExchangePage() {
       <div className="px-4 sm:px-8 py-[7.5vh] sm:py-[15vh] w-full max-w-7xl flex flex-col justify-center items-center">
         <TitleAndDescriptionComponent
           title="Best Crypto Exchange"
-          description={`You are starting your trading journey but you are not sure which crypto exchange to use? After testing over 20 crypto exchanges, here are the top 3 picks from us. By clicking "Create Account" and using our Referral Code, you will benefit from reduced Transaction Fees.`}
+          description={`You are starting your trading journey but you are not sure which crypto exchange to use? After testing over 20 crypto exchanges, here are the top 3 picks from us. By clicking "Create Account" and using our Referral Code, you will support this project and benefit from reduced Transaction Fees on your trades.`}
         />
         <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:auto-rows-fr">
           <CryptoExchangeCardComponent

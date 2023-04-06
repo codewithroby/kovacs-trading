@@ -21,10 +21,10 @@ import iconImage from "../../public/images/brand/icon-only-light.png";
 
 const learnToTrade = [
   {
-    name: "PDF FILES",
+    name: "PDF GUIDES",
     description:
-      "The best PDF files created by experienced traders. Access their knowledge and expertise to take your trading to the next level.",
-    href: "/pdf-files",
+      "The best PDF guides created by experienced traders. Access their knowledge and expertise to take your trading to the next level.",
+    href: "/pdf-guides",
     icon: FaFilePdf,
     colSpan: 2,
   },
@@ -116,7 +116,7 @@ export default function Header() {
                 `flex items-center gap-x-1 text-sm font-semibold leading-6 hover:text-gray-50 focus:outline-none ` +
                 (pathname === "/getting-started" ||
                 pathname === "/best-trading-creators" ||
-                pathname === "/pdf-files" ||
+                pathname === "/pdf-guides" ||
                 pathname === "/trading-terminology"
                   ? "text-gray-50"
                   : "text-gray-300")
@@ -352,7 +352,7 @@ export default function Header() {
                           `flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ` +
                           (pathname === "/getting-started" ||
                           pathname === "/best-trading-creators" ||
-                          pathname === "/pdf-files" ||
+                          pathname === "/pdf-guides" ||
                           pathname === "/trading-terminology"
                             ? "bg-gray-50"
                             : "hover:bg-gray-50")
