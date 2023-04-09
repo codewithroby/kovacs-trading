@@ -27,7 +27,7 @@ export default function HomePage() {
         <meta name="twitter:description" content={metaData.description} />
         <meta name="twitter:image" content={metaData.thumbnail} />
       </Head>
-      <section className="w-full px-4 sm:px-8 py-[15vh] sm:py-[20vh] flex flex-col items-center justify-center max-w-7xl">
+      <section className="w-full px-4 sm:px-8 py-[10vh] sm:py-[15vh] flex flex-col items-center justify-center max-w-7xl">
         <Image
           src={logoFit}
           alt="Kovacs Trading Logo"
@@ -68,7 +68,7 @@ export default function HomePage() {
               knowledge and expertise to take your trading to the next level.
             </p>
             <Link
-              href="/pdf-files"
+              href="/pdf-guides"
               className="self-center lg:self-start max-w-[180px] btnLight px-6 py-3 font-bold"
             >
               PDF COLLECTION
@@ -145,9 +145,9 @@ export default function HomePage() {
             </p>
             <Link
               href="/best-crypto-exchange"
-              className="self-center lg:self-end max-w-[250px] btnLight px-6 py-3 font-bold"
+              className="self-center lg:self-end max-w-[170px] btnLight px-6 py-3 font-bold"
             >
-              BEST CRYPTO EXCHANGE
+              REGISTER NOW
             </Link>
           </div>
           <Image

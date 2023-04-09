@@ -38,7 +38,7 @@ export default function PositionSizeCalculatorComponent() {
   };
 
   return (
-    <div className="w-full max-w-lg rounded-2xl p-8 bg-kt-black grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div className="w-full max-w-lg rounded-lg p-8 bg-kt-black grid grid-cols-1 sm:grid-cols-2 gap-4">
       <div className="flex flex-col space-y-2 col-span-2">
         <label className="calculatorLabel" htmlFor="risk">
           RISK PER TRADE

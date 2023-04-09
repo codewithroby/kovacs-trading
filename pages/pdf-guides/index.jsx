@@ -10,7 +10,7 @@ const metaData = {
   title: "PDF Guides - Kovacs Trading",
   description:
     "The best PDF guides created by experienced traders. Access their knowledge and expertise to take your trading to the next level. Start learning today!",
-  thumbnail: "https://kovacstrading.com/images/thumbnails/pdf-files.jpg",
+  thumbnail: "https://kovacstrading.com/images/thumbnails/pdf-guides.jpg",
 };
 
 export default function PdfFilesPage() {
@@ -33,7 +33,7 @@ export default function PdfFilesPage() {
         />
         <div className="w-full flex flex-col gap-8">
           <PdfCreatorCardComponentAvatarLeft
-            creator="CryptoSoulz"
+            creator="Soulz"
             avatar="crypto-soulz"
             twitter="https://twitter.com/SoulzBTC"
             discord="https://discord.gg/umVkVHbcfe"
@@ -43,17 +43,17 @@ export default function PdfFilesPage() {
               title={`Soulz's Playbook`}
               description={`A complete trading guide, great especially for beginners, as
                   it teaches you the key points to becoming a profitable trader.`}
-              url={`soulzs-playbook-trading-material`}
+              url={`soulz-playbook-trading-material`}
             />
             <PdfCardComponentRight
               title={`Supply & Demand`}
               description={`A complete guide to supply and demand in trading.`}
-              url={`soulzs-supply-and-demand`}
+              url={`soulz-supply-and-demand`}
             />
             <PdfCardComponentRight
               title={`Building A Diversified Crypto Portfolio`}
               description={`A complete guide on building a diversified Cryptocurrencies Portfolio.`}
-              url={`soulzs-building-a-diversified-portfolio`}
+              url={`soulz-building-a-diversified-portfolio`}
             />
           </PdfCreatorCardComponentAvatarLeft>
           <PdfCreatorCardComponentAvatarRight
@@ -76,7 +76,7 @@ export default function PdfFilesPage() {
               description={`This is the most comprehensive real-world guide to Support and
                   Resistance. With real world examples from Bitcoin price
                   movements.`}
-              url={`support-and-resistance-masterclass`}
+              url={`emperorbtc-support-and-resistance-masterclass`}
             />
 
             <PdfCardComponentLeft
@@ -84,7 +84,7 @@ export default function PdfFilesPage() {
               description={`This is the most comprehensive real-world guide to Support and
                   Resistance. With real world examples from Bitcoin price
                   movements.`}
-              url={`trading-bitcoin-masterclass-part-one`}
+              url={`emperorbtc-trading-bitcoin-masterclass-part-one`}
             />
 
             <PdfCardComponentLeft
@@ -92,17 +92,9 @@ export default function PdfFilesPage() {
               description={`This is the most comprehensive real-world guide to Support and
                   Resistance. With real world examples from Bitcoin price
                   movements.`}
-              url={`trading-bitcoin-masterclass-part-two`}
+              url={`emperorbtc-trading-bitcoin-masterclass-part-two`}
             />
           </PdfCreatorCardComponentAvatarRight>
-          <PdfCreatorCardComponentAvatarLeft
-            creator="Robert Kovacs"
-            avatar="robert-cfx"
-            twitter="https://twitter.com/robert_cfx"
-            instagram="https://instagram.com/lostromanianboy"
-          >
-            Coming Soon
-          </PdfCreatorCardComponentAvatarLeft>
         </div>
       </div>
     </>
