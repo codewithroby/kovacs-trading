@@ -293,7 +293,7 @@ export default function Header() {
               <FaTwitter className="h-5 w-5" />
             </a>
             <a
-              href="https://www.instagram.com/lostromanianboy/"
+              href="https://www.instagram.com/aka_ale_xander/"
               target="_blank"
               className="hover:text-gray-50"
               aria-label="Instagram Link"
@@ -466,7 +466,7 @@ export default function Header() {
                     <FaTwitter className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://www.instagram.com/lostromanianboy/"
+                    href="https://www.instagram.com/aka_ale_xander/"
                     target="_blank"
                     className="max-w-[100px] flex-1 flex justify-center rounded-lg py-2 bg-kt-yellow hover:bg-kt-black"
                     aria-label="Instagram Link"

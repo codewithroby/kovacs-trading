@@ -16,7 +16,7 @@ export default function Footer() {
           <FaTwitter className="h-6 w-6" />
         </a>
         <a
-          href="https://www.instagram.com/lostromanianboy/"
+          href="https://www.instagram.com/aka_ale_xander/"
           target="_blank"
           className="hover:text-gray-50"
           aria-label="Instagram Link"
