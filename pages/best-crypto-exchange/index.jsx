@@ -43,29 +43,13 @@ export default function BestCryptoExchangePage() {
                 Bybit
               </a>
             </b>{" "}
-            is the perfect exchange for privacy-focused users as it allows
-            leveraged trading{" "}
-            <b>
-              <u>without KYC verification</u>
-            </b>
-            . The low fees also make it our personal choice for our daily
-            trading.
+            is a great exchange to use because it often lists newly released
+            coins, and it has very low transaction fees.
           </CryptoExchangeCardComponent>
           <CryptoExchangeCardComponent
             logo="mexc-logo"
             link="https://www.mexc.com/register?inviteCode=1bDFL"
           >
-            Just like{" "}
-            <b>
-              <a
-                href="https://www.bybit.com/invite?ref=JOKW3R"
-                target="_blank"
-                className="underline text-kt-yellow hover:text-kt-darkYellow"
-              >
-                Bybit
-              </a>
-            </b>
-            ,{" "}
             <b>
               <a
                 href="https://www.mexc.com/register?inviteCode=1bDFL"
@@ -75,12 +59,11 @@ export default function BestCryptoExchangePage() {
                 MEXC
               </a>
             </b>{" "}
-            has very low fees and it allows you to trade using leverage{" "}
+            is a low fees exchange that allows you to trade using leverage{" "}
             <b>
               <u>without KYC verification</u>
-            </b>
-            . You could use both exchanges to trade coins or tokens that are not
-            available on both of them.
+            </b>{" "}
+            - which makes it the perfect exchange for privacy-focused users.
           </CryptoExchangeCardComponent>
           <CryptoExchangeCardComponent
             logo="binance-logo"
@@ -90,7 +73,7 @@ export default function BestCryptoExchangePage() {
             <b>
               <u>wider range</u>
             </b>{" "}
-            of coins and tokens while paying the lowest fees, then{" "}
+            of coins and tokens while paying the lowest fees possible, then{" "}
             <b>
               <a
                 href="https://accounts.binance.com/register?ref=DD1CK7PV"

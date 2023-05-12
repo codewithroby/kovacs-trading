@@ -37,7 +37,7 @@ export default function PdfFilesPage() {
             avatar="crypto-soulz"
             twitter="https://twitter.com/SoulzBTC"
             discord="https://discord.gg/umVkVHbcfe"
-            count={3}
+            count={4}
           >
             <PdfCardComponentRight
               title={`Soulz's Playbook`}
@@ -54,6 +54,11 @@ export default function PdfFilesPage() {
               title={`Building A Diversified Crypto Portfolio`}
               description={`A complete guide on building a diversified Cryptocurrencies Portfolio.`}
               url={`soulz-building-a-diversified-portfolio`}
+            />
+            <PdfCardComponentRight
+              title={`The Power Of EMA's`}
+              description={`A complete guide Exponential Moving Average (EMA) to help you find market trends.`}
+              url={`soulz-the-power-of-emas`}
             />
           </PdfCreatorCardComponentAvatarLeft>
           <PdfCreatorCardComponentAvatarRight

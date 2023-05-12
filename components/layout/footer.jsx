@@ -1,4 +1,4 @@
-import { FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -7,14 +7,6 @@ export default function Footer() {
         GET IN TOUCH
       </p>
       <div className="flex justify-center gap-4 pt-4">
-        <a
-          href="https://twitter.com/robert_cfx"
-          target="_blank"
-          className="hover:text-gray-50"
-          aria-label="Twitter Link"
-        >
-          <FaTwitter className="h-6 w-6" />
-        </a>
         <a
           href="https://www.instagram.com/aka_ale_xander/"
           target="_blank"
