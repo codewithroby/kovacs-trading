@@ -7,7 +7,7 @@ const metaData = {
   title: "Page Not Found - Kovacs Trading",
   description:
     "We're sorry, but the page you were looking for seems to have gone on an unscheduled vacation. Perhaps it's sipping cocktails on a beach somewhere, or maybe it just needed a break from all the internet traffic.",
-  thumbnail: "https://kovacstrading.com/images/brand/thumbnail.jpg",
+  thumbnail: "https://kovacs-trading.robycodes.com/images/brand/thumbnail.jpg",
 };
 
 export default function Error404Page() {
