@@ -1,3 +1,3 @@
-## NextJS Showcase Project -- Developed By [Robert Kovacs](https://instagram.com/aka_ale_xander)
+## NextJS Showcase Project -- Kovacs Trading
 
-Find my other projects on [robycodes.com](https://robycodes.com)
+Developed By [Robert Kovacs](https://instagram.com/aka_ale_xander) - Find my other projects on [robycodes.com](https://robycodes.com)
