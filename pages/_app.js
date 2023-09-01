@@ -1,3 +1,4 @@
+import { React, useEffect } from "react";
 import Layout from "@/components/layout";
 import Head from "next/head";
 import "@/styles/globals.css";
