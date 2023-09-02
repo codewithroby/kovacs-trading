@@ -5,4 +5,4 @@
  - Next.JS
  - Tailwind CSS
 
-> Developed By **[Robert Kovacs](https://instagram.com/aka_ale_xander)** - Find my other projects on **[robycodes.com](https://robycodes.com)**
+> Developed By **[Robert Kovacs](https://robycodes.com)** - Find my other projects on **[robycodes.com](https://robycodes.com)**
