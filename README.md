@@ -1,5 +1,9 @@
 ## Kovacs Trading - Your Guide to Successful Trading
 
+**Project Overview**
+
+A platform that provides everything you need to become a successful trader.
+
 **Tech Stack Used**
 
 ![React](https://img.shields.io/badge/React-000000?logo=react)
