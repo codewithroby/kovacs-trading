@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import TitleAndDescriptionComponent from "@/components/page/titleAndDescription";
 import CryptoExchangeCardComponent from "@/pages/best-crypto-exchange/cryptoExchangeCard";
 
@@ -8,7 +7,7 @@ const metaData = {
   description:
     "You are starting your trading journey but you are not sure which crypto exchange to use? After testing over 20 crypto exchanges, here are the top 3 picks from us.",
   thumbnail:
-    "https://kovacs-trading.robycodes.com/images/thumbnails/best-crypto-exchange.jpg",
+    "https://kovacs-trading.hermesnova.com/images/thumbnails/best-crypto-exchange.jpg",
 };
 
 export default function BestCryptoExchangePage() {

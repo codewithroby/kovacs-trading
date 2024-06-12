@@ -11,7 +11,7 @@ const metaData = {
   title: "Kovacs Trading - Your Guide to Successful Trading",
   description:
     "Learn how to trade for free with our comprehensive tutorials and access useful tools that enhance your trading experience. Our platform provides everything you need to become a successful trader.",
-  thumbnail: "https://kovacs-trading.robycodes.com/images/brand/thumbnail.jpg",
+  thumbnail: "https://kovacs-trading.hermesnova.com/images/brand/thumbnail.jpg",
 };
 
 export default function HomePage() {

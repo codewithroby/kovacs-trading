@@ -11,7 +11,7 @@ const metaData = {
   description:
     "The best PDF guides created by experienced traders. Access their knowledge and expertise to take your trading to the next level. Start learning today!",
   thumbnail:
-    "https://kovacs-trading.robycodes.com/images/thumbnails/pdf-guides.jpg",
+    "https://kovacs-trading.hermesnova.com/images/thumbnails/pdf-guides.jpg",
 };
 
 export default function PdfFilesPage() {
