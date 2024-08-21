@@ -8,4 +8,4 @@ A platform that provides everything you need to become a successful trader.
 ![Next.JS](https://img.shields.io/badge/Next.JS-000000?logo=nextdotjs)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-000000?logo=tailwindcss)
 
-> Developed By **[Robert Kovacs](https://robycodes.com)** - Find my other projects on **[robycodes.com](https://robycodes.com)**
+> Developed By **[HermesNova](https://hermesnova.com)**
