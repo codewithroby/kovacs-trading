@@ -7,7 +7,7 @@ const metaData = {
   description:
     "You are starting your trading journey but you are not sure which crypto exchange to use? After testing over 20 crypto exchanges, here are the top 3 picks from us.",
   thumbnail:
-    "https://kovacs-trading.hermesnova.com/images/thumbnails/best-crypto-exchange.jpg",
+    "https://kovacs-trading.codewithroby.com/images/thumbnails/best-crypto-exchange.jpg",
 };
 
 export default function BestCryptoExchangePage() {

@@ -7,7 +7,7 @@ const metaData = {
   description:
     "Learning the terminology of trading can help you understand the specific terms used in trading, which can improve your comprehension of trading materials and communication with other traders.",
   thumbnail:
-    "https://kovacs-trading.hermesnova.com/images/thumbnails/trading-terminology.jpg",
+    "https://kovacs-trading.codewithroby.com/images/thumbnails/trading-terminology.jpg",
 };
 
 export default function TradingTerminologyPage() {

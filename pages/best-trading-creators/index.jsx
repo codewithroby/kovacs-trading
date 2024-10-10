@@ -7,7 +7,7 @@ const metaData = {
   description:
     "Learn more about trading from these creators who post daily about their trading experiences.",
   thumbnail:
-    "https://kovacs-trading.hermesnova.com/images/thumbnails/best-trading-creators.jpg",
+    "https://kovacs-trading.codewithroby.com/images/thumbnails/best-trading-creators.jpg",
 };
 
 export default function BestTradingCreatorsPage() {
