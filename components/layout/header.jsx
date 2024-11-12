@@ -280,7 +280,7 @@ export default function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center">
           <div className="flex justify-center items-center gap-4 text-gray-300">
             <a
-              href="https://www.instagram.com/aka_ale_xander/"
+              href="https://www.instagram.com/codewithroby/"
               target="_blank"
               className="hover:text-gray-50"
               aria-label="Instagram Link"
@@ -445,7 +445,7 @@ export default function Header() {
                 </p>
                 <div className="w-full flex justify-center gap-4 text-white">
                   <a
-                    href="https://www.instagram.com/aka_ale_xander/"
+                    href="https://www.instagram.com/codewithroby/"
                     target="_blank"
                     className="max-w-[100px] flex-1 flex justify-center rounded-lg py-2 bg-kt-yellow hover:bg-kt-black"
                     aria-label="Instagram Link"

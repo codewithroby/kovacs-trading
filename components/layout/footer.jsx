@@ -8,7 +8,7 @@ export default function Footer() {
       </p>
       <div className="flex justify-center gap-4 pt-4">
         <a
-          href="https://www.instagram.com/aka_ale_xander/"
+          href="https://www.instagram.com/codewithroby/"
           target="_blank"
           className="hover:text-gray-50"
           aria-label="Instagram Link"
