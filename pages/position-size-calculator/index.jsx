@@ -7,7 +7,7 @@ const metaData = {
   description:
     "Calculate your trade's position size quickly and easily with our free online calculator. Our user-friendly tool simplifies the process of determining your trade's lot size, making trading more efficient and less stressful. Try it now!",
   thumbnail:
-    "https://kovacs-trading.codewithroby.com/images/thumbnails/position-size-calculator.jpg",
+    "https://kovacstrading.com/images/thumbnails/position-size-calculator.jpg",
 };
 
 export default function PositionSizeCalculatorPage() {
